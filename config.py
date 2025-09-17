@@ -136,7 +136,7 @@ def get_calculated_parameters():
         'inference_year': inference_year
     }
 
-# Authentication - Update these with your own credentials
-SERVICE_ACCOUNT_FILE = 'your-service-account-file.json'  # Path to your Google Earth Engine service account JSON
-GEE_PROJECT = 'your-gee-project-id'  # Your Google Earth Engine project ID
-FALLBACK_PROJECT = 'your-fallback-project'  # Fallback project ID
+# Authentication
+SERVICE_ACCOUNT_FILE = 'anvilcloudmegpai-29e62c9d27e3.json'
+GEE_PROJECT = 'anvilcloudmegpai'
+FALLBACK_PROJECT = 'ee-odperry'

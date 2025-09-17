@@ -1,122 +1,61 @@
-# 🌽 Crop Area Classifier
+# Crop Classifier - Revised Version
 
-A satellite-based machine learning system for classifying and estimating crop areas using Google Earth Engine, Sentinel-2 satellite imagery, and USDA Cropland Data Layer (CDL).
+This is the refactored version of the crop classifier with separated configuration and functions.
 
-## 🚀 Features
+## Structure
 
-- **Multi-crop classification**: Support for corn, soy, cotton, wheat, and other major crops
-- **Satellite integration**: Uses Sentinel-2 imagery for vegetation indices (GCVI, NDRE2)
-- **Crop rotation analysis**: Incorporates historical crop rotation patterns
-- **State-level processing**: Processes individual states with extrapolation capabilities
-- **XGBoost modeling**: Advanced machine learning for accurate classification
-- **Area estimation**: Calculates crop areas in acres with statistical confidence
-
-## 📋 Requirements
-
-- Python 3.7+
-- Google Earth Engine account
-- GEE service account credentials (JSON file)
-
-## 🛠️ Installation
-
-1. Clone this repository:
-```bash
-git clone https://github.com/satyieldOP/crop-area-classifier-public.git
-cd crop-area-classifier-public
+```
+revised/
+├── config.py              # All parameters and configuration
+├── crop_functions.py       # All core functions
+├── main.py                # Main execution script
+├── anvilcloudmegpai-29e62c9d27e3.json  # Service account credentials
+└── README.md              # This file
 ```
 
-2. Install dependencies:
+## Files Description
+
+### config.py
+Contains all configuration parameters:
+- Model parameters (year, dates, features)
+- Spatial resolution settings
+- XGBoost parameters
+- State lists
+- Authentication settings
+
+### crop_functions.py
+Contains all core functions:
+- Earth Engine initialization
+- Data loading (CDL, Sentinel-2)
+- Feature engineering (rotation features, satellite indices)
+- Classification and area calculation functions
+
+### main.py
+Main orchestration script that:
+- Imports config and functions
+- Runs the full classification workflow
+- Handles failed states and retries
+- Outputs final results
+
+## Usage
+
 ```bash
-pip install -r requirements.txt
-```
-
-3. Set up Google Earth Engine:
-   - Create a GEE service account
-   - Download the JSON credentials file
-   - Update `config.py` with your credentials
-
-## ⚙️ Configuration
-
-Edit `config.py` to customize:
-
-- **Years**: `training_year` and `inference_year`
-- **Crops**: Modify `crops_to_analyze` list
-- **Features**: Choose satellite features in `features_to_use`
-- **States**: Select target states in state lists
-- **Model**: Adjust XGBoost parameters
-
-## 🚀 Usage
-
-### Basic Usage
-```bash
+cd 9-9-2025/revised
 python main.py
 ```
 
-### Multi-crop Analysis
-See `MULTI_CROP_GUIDE.md` for detailed instructions on analyzing multiple crops.
+## Configuration
 
-## 📁 Project Structure
+To modify parameters, edit `config.py`:
+- Change `selected_year` to predict different years
+- Modify `features_to_use` to use different satellite features
+- Adjust `use_satellite_data` to enable/disable satellite features
+- Update state lists or extrapolation factors as needed
 
-```
-├── config.py              # Configuration parameters
-├── crop_functions.py       # Core processing functions  
-├── main.py                # Main execution script
-├── usda_data.py           # USDA data integration
-├── MULTI_CROP_GUIDE.md    # Multi-crop analysis guide
-├── MULTI_CROP_USAGE.md    # Usage examples
-└── requirements.txt       # Python dependencies
-```
+## Benefits of This Structure
 
-## 🔧 Key Components
-
-### config.py
-Centralized configuration for:
-- Model parameters and years
-- Spatial resolution settings
-- Crop classes and features
-- Authentication credentials
-
-### crop_functions.py
-Core functions for:
-- Earth Engine initialization
-- Satellite data processing
-- Feature engineering
-- Classification algorithms
-- Area calculations
-
-### main.py
-Orchestrates the full workflow:
-- Data loading and preprocessing
-- Model training and prediction
-- State-by-state processing
-- Results aggregation
-
-## 📊 Output
-
-The system generates:
-- State-level crop area estimates (acres)
-- Classification confidence metrics
-- Processing logs and statistics
-- Optional visualization outputs
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙋‍♂️ Support
-
-For questions or issues:
-- Create an issue on GitHub
-- Check the documentation files for detailed usage
-
-## 🎯 About
-
-Developed by [SatYield](https://github.com/satyieldOP) for satellite-based agricultural monitoring and crop area estimation.
+1. **Maintainability**: Parameters are centralized in config.py
+2. **Reusability**: Functions can be imported and used separately
+3. **Testability**: Individual functions can be tested in isolation
+4. **Clarity**: Main workflow is clear and readable
+5. **Flexibility**: Easy to modify parameters without touching core logic
