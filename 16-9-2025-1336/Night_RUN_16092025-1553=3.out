@@ -1,0 +1,2504 @@
+nohup: ignoring input
+*** Earth Engine *** Share your feedback by taking our Annual Developer Satisfaction Survey: https://google.qualtrics.com/jfe/form/SV_7TDKVSyKvBdmMqW?ref=4i2o6
+🚀 Starting crop area classification at 2025-09-16 13:54:11 (Local Time)
+Earth Engine version: 1.5.18
+   📡 Initializing Earth Engine...
+Authentication successful with satyield-algo project
+Configuration: Training Year=2023, Inference Year=2025
+Satellite Data: Yes
+States: Corn/Soy Belt only
+Features: ['GCVI']
+Date Range: 7/10 - 9/9
+==================================================
+region_name: Colorado
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 1.0000 (100.00%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 6 samples
+   Total: 6 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other            100.00%        6        6
+--------------------------------------------------
+OVERALL          100.00%        6        6
+============================================================
+
+📍 Colorado:
+     CORN: Pred= 0.00M | USDA= 1.49M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA=  N/AM | Error=No data
+   SORGHUM: Pred= 0.00M | USDA= 0.16M | Error=-100.0%
+region_name: Illinois
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9310 (93.10%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 607 samples
+   Corn (code 1): 637 samples
+   Soy (code 5): 626 samples
+   Total: 1870 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             94.56%      574      607
+Corn              92.78%      591      637
+Soy               92.01%      576      626
+--------------------------------------------------
+OVERALL           93.10%     1741     1870
+============================================================
+
+📍 Illinois:
+     CORN: Pred=10.89M | USDA= 11.0M | Error= -1.0%
+      SOY: Pred= 9.01M | USDA= 10.3M | Error=-12.5%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Indiana
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9176 (91.76%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 650 samples
+   Corn (code 1): 622 samples
+   Soy (code 5): 633 samples
+   Total: 1905 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             94.62%      615      650
+Corn              90.51%      563      622
+Soy               90.05%      570      633
+--------------------------------------------------
+OVERALL           91.76%     1748     1905
+============================================================
+
+📍 Indiana:
+     CORN: Pred= 6.23M | USDA=  5.3M | Error=+17.5%
+      SOY: Pred= 5.05M | USDA=  5.4M | Error= -6.5%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Iowa
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9192 (91.92%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 620 samples
+   Corn (code 1): 614 samples
+   Soy (code 5): 598 samples
+   Total: 1832 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             95.65%      593      620
+Corn              88.76%      545      614
+Soy               91.30%      546      598
+--------------------------------------------------
+OVERALL           91.92%     1684     1832
+============================================================
+
+📍 Iowa:
+     CORN: Pred=12.58M | USDA= 13.5M | Error= -6.8%
+      SOY: Pred= 9.94M | USDA=  9.4M | Error= +5.7%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Kansas
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9545 (95.45%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 11 samples
+   Corn (code 1): 7 samples
+   Soy (code 5): 4 samples
+   Total: 22 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other            100.00%       11       11
+Corn             100.00%        7        7
+Soy               75.00%        3        4
+--------------------------------------------------
+OVERALL           95.45%       21       22
+============================================================
+
+📍 Kansas:
+     CORN: Pred= 0.00M | USDA= 6.75M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA=  4.1M | Error=-100.0%
+   SORGHUM: Pred= 0.00M | USDA=  2.8M | Error=-100.0%
+region_name: Kentucky
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9565 (95.65%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 19 samples
+   Corn (code 1): 2 samples
+   Soy (code 5): 2 samples
+   Total: 23 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other            100.00%       19       19
+Corn             100.00%        2        2
+Soy               50.00%        1        2
+--------------------------------------------------
+OVERALL           95.65%       22       23
+============================================================
+
+📍 Kentucky:
+     CORN: Pred= 0.00M | USDA= 1.53M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA=  1.8M | Error=-100.0%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Michigan
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 1.0000 (100.00%)
+
+📈 Validation Sample Counts:
+   Corn (code 1): 3 samples
+   Soy (code 5): 1 samples
+   Total: 4 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Corn             100.00%        3        3
+Soy              100.00%        1        1
+--------------------------------------------------
+OVERALL          100.00%        4        4
+============================================================
+
+📍 Michigan:
+     CORN: Pred= 0.00M | USDA= 2.35M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA= 2.05M | Error=-100.0%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Minnesota
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9054 (90.54%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 12 samples
+   Corn (code 1): 41 samples
+   Soy (code 5): 21 samples
+   Total: 74 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             91.67%       11       12
+Corn              95.12%       39       41
+Soy               80.95%       17       21
+--------------------------------------------------
+OVERALL           90.54%       67       74
+============================================================
+
+📍 Minnesota:
+     CORN: Pred= 0.01M | USDA=  8.7M | Error=-99.9%
+      SOY: Pred= 0.01M | USDA=  7.0M | Error=-99.9%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Missouri
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8493 (84.93%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 611 samples
+   Corn (code 1): 603 samples
+   Soy (code 5): 564 samples
+   Total: 1778 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             82.98%      507      611
+Corn              86.24%      520      603
+Soy               85.64%      483      564
+--------------------------------------------------
+OVERALL           84.93%     1510     1778
+============================================================
+
+📍 Missouri:
+     CORN: Pred= 0.62M | USDA=  3.7M | Error=-83.2%
+      SOY: Pred= 0.80M | USDA=  5.6M | Error=-85.7%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Nebraska
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9019 (90.19%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 600 samples
+   Corn (code 1): 617 samples
+   Soy (code 5): 611 samples
+   Sorghum (code 4): 211 samples
+   Total: 2039 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             96.00%      576      600
+Corn              85.41%      527      617
+Soy               90.18%      551      611
+Sorghum           87.68%      185      211
+--------------------------------------------------
+OVERALL           90.19%     1839     2039
+============================================================
+
+📍 Nebraska:
+     CORN: Pred= 9.61M | USDA= 10.5M | Error= -8.4%
+      SOY: Pred= 5.47M | USDA=  4.8M | Error=+13.9%
+   SORGHUM: Pred= 1.54M | USDA= 0.25M | Error=+518.0%
+region_name: North Dakota
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8057 (80.57%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 575 samples
+   Corn (code 1): 606 samples
+   Soy (code 5): 610 samples
+   Sorghum (code 4): 5 samples
+   Total: 1796 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             84.00%      483      575
+Corn              79.54%      482      606
+Soy               78.36%      478      610
+Sorghum           80.00%        4        5
+--------------------------------------------------
+OVERALL           80.57%     1447     1796
+============================================================
+
+📍 North Dakota:
+     CORN: Pred= 4.50M | USDA=  4.6M | Error= -2.3%
+      SOY: Pred= 6.38M | USDA=  6.6M | Error= -3.3%
+   SORGHUM: Pred= 0.01M | USDA=  N/AM | Error=No data
+region_name: Ohio
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8333 (83.33%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 3 samples
+   Corn (code 1): 15 samples
+   Soy (code 5): 30 samples
+   Total: 48 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             66.67%        2        3
+Corn              86.67%       13       15
+Soy               83.33%       25       30
+--------------------------------------------------
+OVERALL           83.33%       40       48
+============================================================
+
+📍 Ohio:
+     CORN: Pred= 0.00M | USDA=  3.4M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA=  4.9M | Error=-99.9%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Pennsylvania
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+!!!!!!! skipping: Pennsylvania - Error: No valid training data were found.
+region_name: South Dakota
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9000 (90.00%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 10 samples
+   Corn (code 1): 7 samples
+   Soy (code 5): 3 samples
+   Total: 20 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             90.00%        9       10
+Corn              85.71%        6        7
+Soy              100.00%        3        3
+--------------------------------------------------
+OVERALL           90.00%       18       20
+============================================================
+
+📍 South Dakota:
+     CORN: Pred= 0.01M | USDA=  6.7M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA=  5.1M | Error=-99.9%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Wisconsin
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8803 (88.03%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 573 samples
+   Corn (code 1): 592 samples
+   Soy (code 5): 572 samples
+   Sorghum (code 4): 1 samples
+   Total: 1738 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             93.54%      536      573
+Corn              82.43%      488      592
+Soy               88.46%      506      572
+Sorghum            0.00%        0        1
+--------------------------------------------------
+OVERALL           88.03%     1530     1738
+============================================================
+
+📍 Wisconsin:
+     CORN: Pred= 3.65M | USDA=  4.1M | Error=-11.0%
+      SOY: Pred= 2.22M | USDA=  2.0M | Error=+11.1%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+
+⏱️  State Processing Completed in: 0:46:01 (2761.0 seconds)
+============================================================
+total_FINAL corn_area all USA (million acres): 55.04406546869635
+total_FINAL soy_area all USA (million acres): 45.856132075471706
+Run again with the following failed states: ['Pennsylvania']
+region_name: Colorado
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 1.0000 (100.00%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 6 samples
+   Total: 6 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other            100.00%        6        6
+--------------------------------------------------
+OVERALL          100.00%        6        6
+============================================================
+
+📍 Colorado:
+     CORN: Pred= 0.00M | USDA= 1.49M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA=  N/AM | Error=No data
+   SORGHUM: Pred= 0.00M | USDA= 0.16M | Error=-100.0%
+region_name: Illinois
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9310 (93.10%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 607 samples
+   Corn (code 1): 637 samples
+   Soy (code 5): 626 samples
+   Total: 1870 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             94.56%      574      607
+Corn              92.78%      591      637
+Soy               92.01%      576      626
+--------------------------------------------------
+OVERALL           93.10%     1741     1870
+============================================================
+
+📍 Illinois:
+     CORN: Pred=10.89M | USDA= 11.0M | Error= -1.0%
+      SOY: Pred= 9.01M | USDA= 10.3M | Error=-12.5%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Indiana
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9176 (91.76%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 650 samples
+   Corn (code 1): 622 samples
+   Soy (code 5): 633 samples
+   Total: 1905 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             94.62%      615      650
+Corn              90.51%      563      622
+Soy               90.05%      570      633
+--------------------------------------------------
+OVERALL           91.76%     1748     1905
+============================================================
+
+📍 Indiana:
+     CORN: Pred= 6.23M | USDA=  5.3M | Error=+17.6%
+      SOY: Pred= 5.05M | USDA=  5.4M | Error= -6.5%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Iowa
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9209 (92.09%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 620 samples
+   Corn (code 1): 614 samples
+   Soy (code 5): 598 samples
+   Total: 1832 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             95.48%      592      620
+Corn              88.93%      546      614
+Soy               91.81%      549      598
+--------------------------------------------------
+OVERALL           92.09%     1687     1832
+============================================================
+
+📍 Iowa:
+     CORN: Pred=12.58M | USDA= 13.5M | Error= -6.8%
+      SOY: Pred= 9.94M | USDA=  9.4M | Error= +5.7%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Kansas
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9545 (95.45%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 11 samples
+   Corn (code 1): 7 samples
+   Soy (code 5): 4 samples
+   Total: 22 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other            100.00%       11       11
+Corn             100.00%        7        7
+Soy               75.00%        3        4
+--------------------------------------------------
+OVERALL           95.45%       21       22
+============================================================
+
+📍 Kansas:
+     CORN: Pred= 0.00M | USDA= 6.75M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA=  4.1M | Error=-100.0%
+   SORGHUM: Pred= 0.00M | USDA=  2.8M | Error=-100.0%
+region_name: Kentucky
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9762 (97.62%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 29 samples
+   Corn (code 1): 10 samples
+   Soy (code 5): 3 samples
+   Total: 42 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other            100.00%       29       29
+Corn              90.00%        9       10
+Soy              100.00%        3        3
+--------------------------------------------------
+OVERALL           97.62%       41       42
+============================================================
+
+📍 Kentucky:
+     CORN: Pred= 0.00M | USDA= 1.53M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA=  1.8M | Error=-100.0%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Michigan
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 1.0000 (100.00%)
+
+📈 Validation Sample Counts:
+   Corn (code 1): 3 samples
+   Soy (code 5): 1 samples
+   Total: 4 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Corn             100.00%        3        3
+Soy              100.00%        1        1
+--------------------------------------------------
+OVERALL          100.00%        4        4
+============================================================
+
+📍 Michigan:
+     CORN: Pred= 0.00M | USDA= 2.35M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA= 2.05M | Error=-100.0%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Minnesota
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9054 (90.54%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 12 samples
+   Corn (code 1): 41 samples
+   Soy (code 5): 21 samples
+   Total: 74 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             91.67%       11       12
+Corn              95.12%       39       41
+Soy               80.95%       17       21
+--------------------------------------------------
+OVERALL           90.54%       67       74
+============================================================
+
+📍 Minnesota:
+     CORN: Pred= 0.01M | USDA=  8.7M | Error=-99.9%
+      SOY: Pred= 0.01M | USDA=  7.0M | Error=-99.9%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Missouri
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8493 (84.93%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 611 samples
+   Corn (code 1): 603 samples
+   Soy (code 5): 564 samples
+   Total: 1778 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             82.98%      507      611
+Corn              86.24%      520      603
+Soy               85.64%      483      564
+--------------------------------------------------
+OVERALL           84.93%     1510     1778
+============================================================
+
+📍 Missouri:
+     CORN: Pred= 0.62M | USDA=  3.7M | Error=-83.2%
+      SOY: Pred= 0.80M | USDA=  5.6M | Error=-85.7%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Nebraska
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.9019 (90.19%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 600 samples
+   Corn (code 1): 617 samples
+   Soy (code 5): 611 samples
+   Sorghum (code 4): 211 samples
+   Total: 2039 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             96.00%      576      600
+Corn              85.41%      527      617
+Soy               90.18%      551      611
+Sorghum           87.68%      185      211
+--------------------------------------------------
+OVERALL           90.19%     1839     2039
+============================================================
+
+📍 Nebraska:
+     CORN: Pred= 9.61M | USDA= 10.5M | Error= -8.4%
+      SOY: Pred= 5.47M | USDA=  4.8M | Error=+13.9%
+   SORGHUM: Pred= 1.54M | USDA= 0.25M | Error=+518.0%
+region_name: North Dakota
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8057 (80.57%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 575 samples
+   Corn (code 1): 606 samples
+   Soy (code 5): 610 samples
+   Sorghum (code 4): 5 samples
+   Total: 1796 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             84.00%      483      575
+Corn              79.54%      482      606
+Soy               78.36%      478      610
+Sorghum           80.00%        4        5
+--------------------------------------------------
+OVERALL           80.57%     1447     1796
+============================================================
+
+📍 North Dakota:
+     CORN: Pred= 4.50M | USDA=  4.6M | Error= -2.3%
+      SOY: Pred= 6.38M | USDA=  6.6M | Error= -3.3%
+   SORGHUM: Pred= 0.01M | USDA=  N/AM | Error=No data
+region_name: Ohio
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8333 (83.33%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 3 samples
+   Corn (code 1): 15 samples
+   Soy (code 5): 30 samples
+   Total: 48 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             66.67%        2        3
+Corn              86.67%       13       15
+Soy               83.33%       25       30
+--------------------------------------------------
+OVERALL           83.33%       40       48
+============================================================
+
+📍 Ohio:
+     CORN: Pred= 0.00M | USDA=  3.4M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA=  4.9M | Error=-99.9%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Pennsylvania
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+!!!!!!! skipping: Pennsylvania - Error: No valid training data were found.
+region_name: South Dakota
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.7857 (78.57%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 10 samples
+   Corn (code 1): 4 samples
+   Total: 14 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             80.00%        8       10
+Corn              75.00%        3        4
+--------------------------------------------------
+OVERALL           78.57%       11       14
+============================================================
+
+📍 South Dakota:
+     CORN: Pred= 0.01M | USDA=  6.7M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA=  5.1M | Error=-99.9%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+region_name: Wisconsin
+   📊 Loading CDL 2023 with confidence band...
+   ✅ CDL 2023 has confidence band - applying filtering
+   🎯 Applied CDL confidence filter: threshold ≥ 95%
+🔄 Splitting training data: 80.0% train, 20.0% validation
+🔍 Evaluating classifier performance on validation set...
+
+============================================================
+🔍 VALIDATION PERFORMANCE METRICS (Fast Local Calculation)
+============================================================
+📊 Overall Accuracy: 0.8803 (88.03%)
+
+📈 Validation Sample Counts:
+   Other (code 0): 573 samples
+   Corn (code 1): 592 samples
+   Soy (code 5): 572 samples
+   Sorghum (code 4): 1 samples
+   Total: 1738 validation samples
+
+📋 Per-Class Accuracy:
+Crop            Accuracy   Correct  Total   
+--------------------------------------------------
+Other             93.54%      536      573
+Corn              82.43%      488      592
+Soy               88.46%      506      572
+Sorghum            0.00%        0        1
+--------------------------------------------------
+OVERALL           88.03%     1530     1738
+============================================================
+
+📍 Wisconsin:
+     CORN: Pred= 3.65M | USDA=  4.1M | Error=-11.0%
+      SOY: Pred= 2.22M | USDA=  2.0M | Error=+11.1%
+   SORGHUM: Pred= 0.00M | USDA=  N/AM | Error=No data
+
+⏱️  State Processing Completed in: 0:25:21 (1521.1 seconds)
+============================================================
+total_FINAL corn_area all USA (million acres): 110.09499828316358
+total_FINAL soy_area all USA (million acres): 91.71108490566039
+
+📍 Colorado:
+     CORN: Pred= 0.00M | USDA= 1.5M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA= N/AM | Error=No data
+region_name: Illinois
+
+📍 Illinois:
+     CORN: Pred=10.89M | USDA=11.0M | Error= -1.0%
+      SOY: Pred= 9.01M | USDA=10.3M | Error=-12.5%
+region_name: Indiana
+
+📍 Indiana:
+     CORN: Pred= 6.23M | USDA= 5.3M | Error=+17.6%
+      SOY: Pred= 5.05M | USDA= 5.4M | Error= -6.5%
+region_name: Iowa
+
+📍 Iowa:
+     CORN: Pred=12.58M | USDA=13.5M | Error= -6.8%
+      SOY: Pred= 9.94M | USDA= 9.4M | Error= +5.7%
+region_name: Kansas
+
+📍 Kansas:
+     CORN: Pred= 0.00M | USDA= 6.8M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA= 4.1M | Error=-100.0%
+region_name: Kentucky
+
+📍 Kentucky:
+     CORN: Pred= 0.00M | USDA= 1.5M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA= 1.8M | Error=-100.0%
+region_name: Michigan
+
+📍 Michigan:
+     CORN: Pred= 0.00M | USDA= 2.4M | Error=-100.0%
+      SOY: Pred= 0.00M | USDA= 2.0M | Error=-100.0%
+region_name: Minnesota
+
+📍 Minnesota:
+     CORN: Pred= 0.01M | USDA= 8.7M | Error=-99.9%
+      SOY: Pred= 0.01M | USDA= 7.0M | Error=-99.9%
+region_name: Missouri
+
+📍 Missouri:
+     CORN: Pred= 0.62M | USDA= 3.7M | Error=-83.2%
+      SOY: Pred= 0.80M | USDA= 5.6M | Error=-85.7%
+region_name: Nebraska
+
+📍 Nebraska:
+     CORN: Pred= 9.61M | USDA=10.5M | Error= -8.4%
+      SOY: Pred= 5.47M | USDA= 4.8M | Error=+13.9%
+region_name: North Dakota
+
+📍 North Dakota:
+     CORN: Pred= 4.50M | USDA= 4.6M | Error= -2.3%
+      SOY: Pred= 6.38M | USDA= 6.6M | Error= -3.3%
+region_name: Ohio
+
+📍 Ohio:
+     CORN: Pred= 0.00M | USDA= 3.4M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA= 4.9M | Error=-99.9%
+region_name: South Dakota
+
+📍 South Dakota:
+     CORN: Pred= 0.01M | USDA= 6.7M | Error=-99.9%
+      SOY: Pred= 0.00M | USDA= 5.1M | Error=-99.9%
+region_name: Wisconsin
+
+📍 Wisconsin:
+     CORN: Pred= 3.65M | USDA= 4.1M | Error=-11.0%
+      SOY: Pred= 2.22M | USDA= 2.0M | Error=+11.1%
+
+⏱️  State Processing Completed in: 0:46:01
+============================================================
+total_FINAL corn_area all USA (million acres): 110.09499828316358
+total_FINAL soy_area all USA (million acres): 91.71108490566039
+
+============================================================
+🎯 FINAL RESULTS:
+Corn Area (million acres): 110.09499828316358
+Soy Area (million acres): 91.71108490566039
+============================================================
+
+📊 VALIDATION vs USDA DATA (2025):
+--------------------------------------------------
+  CORN: Predicted=  48.1M acres | USDA=  83.6M acres | Error=-42.5%
+   SOY: Predicted=  38.9M acres | USDA=  69.0M acres | Error=-43.7%
+SORGHUM: Predicted=   1.5M acres | USDA=   3.2M acres | Error=-51.9%
+--------------------------------------------------
+
+⏱️  TIMING INFORMATION:
+Start Time: 2025-09-16 13:54:11 (Local Time)
+End Time: 2025-09-16 15:05:33 (Local Time)
+Total Duration: 1:11:22 (4282.4 seconds)
+
+📋 COMPLETE CONFIGURATION DUMP:
+============================================================
+🗓️  YEARS:
+   training_year = 2023
+   inference_year = 2025
+   selected_year = 2025
+
+📅 DATE RANGE:
+   day_start = '10'
+   month_start = '7'
+   day_end = '9'
+   month_end = '9'
+
+⚙️  MODEL CONFIGURATION:
+   use_satellite_data = 1
+   only_corn_soy_belt_states = 1
+   corn_or_soy_states = 1
+
+🌍 SPATIAL RESOLUTION:
+   resolution = 30
+   county_scale_reduction_factor = 9
+
+🌾 CROP SELECTION:
+   crops_to_process = ['Corn', 'Soy', 'Sorghum']
+   cdl_classes = {'Other': 0, 'Corn': 1, 'Soy': 5, 'Sorghum': 4}
+
+⚡ PROCESSING PARAMETERS:
+   m2_to_acres = 0.000247105
+   QA_BAND = 'cs'
+   CLEAR_THRESHOLD = 0.65
+   tileScale = 16
+
+🔄 CROP ROTATION:
+   n_years_rotation_history = 20
+
+📊 SAMPLING:
+   n_points_per_class_satellite = 3000
+   n_points_per_class_no_satellite = 3000
+
+🌳 XGBOOST PARAMETERS:
+   numberOfTrees = 300
+   maxNodes = 5
+   shrinkage = 0.1
+
+✅ VALIDATION:
+   enable_validation = True
+   train_validation_split = 0.8
+   validation_seed = 42
+
+🎯 CDL CONFIDENCE FILTERING:
+   enable_cdl_confidence_filtering = True
+   cdl_confidence_threshold = 95
+   → Only pixels with CDL confidence ≥ 95% will be used for training
+
+🛰️  FEATURES:
+   features_to_use = ['GCVI']
+   quality_mosaic_band = 'GCVI'
+
+📈 EXTRAPOLATION:
+   corn_extepolation_ratio = 0.8737
+   soy_extepolation_ratio = 0.848
+
+🗺️  STATES:
+   corn_soy_belt_states = ['Colorado', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Michigan', 'Minnesota', 'Missouri', 'Nebraska', 'North Dakota', 'Ohio', 'Pennsylvania', 'South Dakota', 'Wisconsin']
+   states_to_use = ['Colorado', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Michigan', 'Minnesota', 'Missouri', 'Nebraska', 'North Dakota', 'Ohio', 'Pennsylvania', 'South Dakota', 'Wisconsin']
+   exterpolation_factor_corn = 0.8737
+   exterpolation_factor_soy = 0.848
+
+🔐 AUTHENTICATION:
+   SERVICE_ACCOUNT_FILE = 'anvilcloudmegpai-29e62c9d27e3.json'
+   GEE_PROJECT = 'anvilcloudmegpai'
+   FALLBACK_PROJECT = 'ee-odperry'
+
+📤 EXPORT:
+   export_classification = True
+   export_asset_project = 'satyield-algo'
+   export_asset_folder = 'tal_satyield'
+   export_resolution = 100
+
+🧮 CALCULATED:
+   pixel_area_m2 = 72900
+============================================================
+
+🚀 EXPORTING CLASSIFICATION ASSETS:
+============================================================
+
+📊 Exporting Colorado...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Colorado_2025_Crop_Classification_20250916_120533
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   🔄 Export in progress (task id: NQA2TPVSM2F67L7QWDCXGNUB)
+   ✅ Export completed successfully!
+✅ Colorado exported successfully
+
+📊 Exporting Illinois...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Illinois_2025_Crop_Classification_20250916_121214
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   🔄 Export in progress (task id: COSX3WT5QICGFHJANVKL7XQO)
+   ✅ Export completed successfully!
+✅ Illinois exported successfully
+
+📊 Exporting Indiana...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Indiana_2025_Crop_Classification_20250916_121835
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   🔄 Export in progress (task id: 5IT7DQICCPWRGOH7VSGWPVWQ)
+   ✅ Export completed successfully!
+✅ Indiana exported successfully
+
+📊 Exporting Iowa...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Iowa_2025_Crop_Classification_20250916_122451
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   🔄 Export in progress (task id: QIFTXK4AKUK35RINU737PVLU)
+   ✅ Export completed successfully!
+✅ Iowa exported successfully
+
+📊 Exporting Kansas...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Kansas_2025_Crop_Classification_20250916_123149
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   🔄 Export in progress (task id: 4GC7DFWPYU2CTB4ETDINW7N7)
+   ✅ Export completed successfully!
+✅ Kansas exported successfully
+
+📊 Exporting Kentucky...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Kentucky_2025_Crop_Classification_20250916_123638
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   🔄 Export in progress (task id: RHUECICGHQJS2J4Y6WTZMKPF)
+   ✅ Export completed successfully!
+✅ Kentucky exported successfully
+
+📊 Exporting Michigan...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Michigan_2025_Crop_Classification_20250916_124128
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   🔄 Export in progress (task id: 4KIRPJTK3B3I7R3OGOIZERCE)
+   ✅ Export completed successfully!
+✅ Michigan exported successfully
+
+📊 Exporting Minnesota...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Minnesota_2025_Crop_Classification_20250916_125041
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   🔄 Export in progress (task id: FECOJMI3MFIWWDCGHBT3Y2NY)
+   ✅ Export completed successfully!
+✅ Minnesota exported successfully
+
+📊 Exporting Missouri...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Missouri_2025_Crop_Classification_20250916_130545
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   🔄 Export in progress (task id: GUU6T3KVAR4GVJXG43G5HF7F)
+   ✅ Export completed successfully!
+✅ Missouri exported successfully
+
+📊 Exporting Nebraska...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Nebraska_2025_Crop_Classification_20250916_131636
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   🔄 Export in progress (task id: MTUXBVP44OEQAE3TCDLXZM2G)
+   ✅ Export completed successfully!
+✅ Nebraska exported successfully
+
+📊 Exporting North Dakota...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/North_Dakota_2025_Crop_Classification_20250916_132837
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   🔄 Export in progress (task id: NJVE3NQBBL33Q37JLSCLYGK6)
+   ✅ Export completed successfully!
+✅ North Dakota exported successfully
+
+📊 Exporting Ohio...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Ohio_2025_Crop_Classification_20250916_133519
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   🔄 Export in progress (task id: SKJ6LKQ2JQIEO7HC5C7JN5ZJ)
+   ✅ Export completed successfully!
+✅ Ohio exported successfully
+
+📊 Exporting South Dakota...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/South_Dakota_2025_Crop_Classification_20250916_133933
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   🔄 Export in progress (task id: 4LZYSRMKD2M57UANHYFX5OE2)
+   ✅ Export completed successfully!
+✅ South Dakota exported successfully
+
+📊 Exporting Wisconsin...
+Classification export started. Asset ID: projects/satyield-algo/assets/tal_satyield/Wisconsin_2025_Crop_Classification_20250916_134801
+
+📤 Monitoring export task progress...
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   🔄 Export in progress (task id: 5L7K4OZJGHJOG7G46Z2NTB65)
+   ✅ Export completed successfully!
+✅ Wisconsin exported successfully
+============================================================
