@@ -163,8 +163,8 @@ def get_calculated_parameters():
 
 # Authentication
 SERVICE_ACCOUNT_FILE = 'anvilcloudmegpai-29e62c9d27e3.json'
-GEE_PROJECT = 'anvilcloudmegpai'
-FALLBACK_PROJECT = 'ee-odperry'
+GEE_PROJECT = 'satyield-algo'
+FALLBACK_PROJECT = 'satyield-algo'
 
 # Export Configuration
 export_classification = True  # Enabled for asset export testing
