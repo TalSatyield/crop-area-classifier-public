@@ -15,6 +15,7 @@ from usda_data import (USDA_CORN_PLANTED_ACRES, USDA_SOY_PLANTED_ACRES,
                        USDA_RICE_PLANTED_ACRES, USDA_SORGHUM_PLANTED_ACRES,
                        USDA_HAY_PLANTED_ACRES, USDA_SPRING_WHEAT_PLANTED_ACRES,
                        USDA_WINTER_WHEAT_PLANTED_ACRES)
+import random_search
 
 
 def get_local_time():
@@ -224,13 +225,67 @@ def Calculate_Corn_Soy_Area_USA(total_corn_area=0, total_soy_area=0, state_resul
                     training_points, config.train_validation_split, config.validation_seed
                 )
                 
-                # Train classifier on training subset
+                # ------------------------ Random Search Optimization ------------------------
+                optimized_params = None
+                if config.enable_random_search:
+                    print(f"\n🔍 RANDOM SEARCH HYPERPARAMETER OPTIMIZATION ENABLED")
+                    print("="*60)
+                    
+                    # Create results directory if needed
+                    if config.save_random_search_results:
+                        os.makedirs(config.random_search_results_dir, exist_ok=True)
+                        results_filepath = os.path.join(
+                            config.random_search_results_dir, 
+                            f"random_search_{region_name.replace(' ', '_')}_{training_year}_{get_local_time().strftime('%Y%m%d_%H%M%S')}.json"
+                        )
+                    else:
+                        results_filepath = None
+                    
+                    # Configure random search
+                    search_config = {
+                        'search_ranges': config.hyperparameter_search_ranges,
+                        'n_iterations': config.random_search_iterations,
+                        'random_seed': config.random_search_seed,
+                        'scoring_metric': config.random_search_scoring_metric,
+                        'results_filepath': results_filepath
+                    }
+                    
+                    # Run random search optimization
+                    optimized_params, search_summary = random_search.run_random_search_for_region(
+                        train_points, train_stack, validation_points, config.cdl_classes,
+                        region_name, search_config
+                    )
+                    
+                    print(f"\n✅ Random search completed!")
+                    print(f"   Best hyperparameters: {optimized_params}")
+                    print(f"   Improvement: {search_summary['improvement_pct']:.2f}%")
+                    print("="*60)
+                
+                # Use optimized parameters if available, otherwise use config defaults
+                if optimized_params:
+                    num_trees = optimized_params['numberOfTrees']
+                    max_nodes = optimized_params['maxNodes']
+                    shrinkage_param = optimized_params['shrinkage']
+                    print(f"🎯 Training final classifier with OPTIMIZED hyperparameters:")
+                    print(f"   numberOfTrees: {num_trees}")
+                    print(f"   maxNodes: {max_nodes}")
+                    print(f"   shrinkage: {shrinkage_param}")
+                else:
+                    num_trees = config.numberOfTrees
+                    max_nodes = config.maxNodes
+                    shrinkage_param = config.shrinkage
+                    print(f"🎯 Training final classifier with DEFAULT hyperparameters:")
+                    print(f"   numberOfTrees: {num_trees}")
+                    print(f"   maxNodes: {max_nodes}")
+                    print(f"   shrinkage: {shrinkage_param}")
+                
+                # Train classifier on training subset with final hyperparameters
                 classifier_stable = cf.train_classifier(
-                    train_points, train_stack, config.numberOfTrees, config.maxNodes, config.shrinkage
+                    train_points, train_stack, num_trees, max_nodes, shrinkage_param
                 )
                 
                 # Evaluate on validation subset
-                print("🔍 Evaluating classifier performance on validation set...")
+                print("🔍 Evaluating final classifier performance on validation set...")
                 validation_metrics = cf.evaluate_validation_performance(
                     classifier_stable, validation_points, train_stack, config.cdl_classes
                 )
@@ -244,6 +299,11 @@ def Calculate_Corn_Soy_Area_USA(total_corn_area=0, total_soy_area=0, state_resul
             else:
                 # Original behavior - use all training points
                 print("⚠️  Training without validation split (all points used for training)")
+                
+                # Random search requires validation split, so skip if validation is disabled
+                if config.enable_random_search:
+                    print("⚠️  Random search disabled: requires validation split (enable_validation=True)")
+                
                 classifier_stable = cf.train_classifier(
                     training_points, train_stack, config.numberOfTrees, config.maxNodes, config.shrinkage
                 )
@@ -500,6 +560,21 @@ def main():
         print(f"   → Only pixels with CDL confidence ≥ {config.cdl_confidence_threshold}% will be used for training")
     else:
         print(f"   → All CDL pixels will be used for training (no confidence filtering)")
+    
+    # Random Search Parameters
+    print("\n🔍 RANDOM SEARCH HYPERPARAMETER OPTIMIZATION:")
+    print(f"   enable_random_search = {config.enable_random_search}")
+    print(f"   random_search_iterations = {config.random_search_iterations}")
+    print(f"   random_search_seed = {config.random_search_seed}")
+    print(f"   random_search_scoring_metric = '{config.random_search_scoring_metric}'")
+    print(f"   save_random_search_results = {config.save_random_search_results}")
+    print(f"   random_search_results_dir = '{config.random_search_results_dir}'")
+    
+    if config.enable_random_search:
+        print(f"   → Random search will optimize hyperparameters using {config.random_search_iterations} iterations")
+        print(f"   → Search ranges: {config.hyperparameter_search_ranges}")
+    else:
+        print(f"   → Random search disabled, using default hyperparameters")
     
     # Feature Selection
     print("\n🛰️  FEATURES:")

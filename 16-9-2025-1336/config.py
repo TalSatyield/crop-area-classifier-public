@@ -98,6 +98,23 @@ validation_seed = 42  # Random seed for reproducible train/validation splits
 enable_cdl_confidence_filtering = True  # Enable filtering training data by CDL confidence
 cdl_confidence_threshold = 85  # Minimum CDL confidence (0-100 scale) for training points
 
+# Random Search Hyperparameter Optimization Parameters
+enable_random_search = False  # Enable random search hyperparameter optimization
+random_search_iterations = 20  # Number of random search iterations per region
+random_search_seed = 42  # Random seed for reproducible hyperparameter sampling
+random_search_scoring_metric = 'overall_accuracy'  # Metric to optimize: 'overall_accuracy' or 'mean_class_accuracy'
+
+# Hyperparameter Search Ranges
+hyperparameter_search_ranges = {
+    'numberOfTrees': (50, 500),    # Trees: minimum 50, maximum 500
+    'maxNodes': (3, 20),           # Max nodes per tree: minimum 3, maximum 20
+    'shrinkage': (0.01, 0.3)       # Learning rate: minimum 0.01, maximum 0.3 (sampled on log scale)
+}
+
+# Random Search Results
+save_random_search_results = True  # Save detailed random search results to JSON files
+random_search_results_dir = "random_search_results"  # Directory to save random search results
+
 # Feature Selection
 features_to_use = ['GCVI']  # ['GCVI','DOY'] # ['NDRE2','DOY'] - features to use from satellite  
 # Available features: DOY - day of year, GCVI - A Green Chlorophyll Vegetation Index, NDRE2 - Normalized Difference Red Edge Index 2
